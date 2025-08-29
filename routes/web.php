@@ -4,17 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('inicio');
-})->name('contato.inicio');
+})->name('inicio');
 
-Route::get('/sobre', function () {
-    return view('sobre');
-})->name('contato.form.novo');
+Route::get('/portfolio-details', function(){
+    return view('portfolio-details');
+})->name('portfolio-details');
 
-Route::post('/sobre', function() {    
-    echo 'Realizar cadastro do contato';
-})->name('contato.novo');
-
-Route::get('/listar', function () {
-    return view('listar');
-})->name('contato.listagem');
-
+Route::get('/service-details', function(){
+    return view('service-details');
+})->name('service-details');
