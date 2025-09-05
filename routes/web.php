@@ -13,3 +13,7 @@ Route::get('/portfolio-details', function(){
 Route::get('/service-details', function(){
     return view('service-details');
 })->name('service-details');
+
+Route::post('/form-contact', function(){
+     return redirect()->back()->with('success', 'Mensagem enviada com sucesso!');
+})->name('form-contact');
